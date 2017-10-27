@@ -105,6 +105,7 @@ class BodyContainer extends Component {
   render() {
   	
 		return (
+			
 			<Router>
 					<div>
 						<TopNavbar
@@ -114,6 +115,12 @@ class BodyContainer extends Component {
 							route={this.state.route.topNavBar}
 							handleSearch={(text) => this.handleSearch(text)}
 						/>
+						
+						<Row>
+						<Col sm={1}>
+						</Col>
+						<Col sm={10}>
+
 						<Route path="/patientview" render={() => {
 
 							return (
@@ -152,9 +159,14 @@ class BodyContainer extends Component {
 								<AddReportContainer />
 							)
 						}}/>
+
+						</Col>
+
+						</Row>
 					</div>
 					
 			</Router>
+			
 			
 		);
   }

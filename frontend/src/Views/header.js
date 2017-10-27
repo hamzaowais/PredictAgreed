@@ -10,7 +10,7 @@ class Header extends Component {
       <header className="header-image">
         <Grid>
           <Col xs={12} md={3}>
-          	<img height="70"  className="logo" alt="logo" src='http://agreedtechnologies.com/wp/wp-content/uploads/2015/11/Agreed-Tech-Logo_Logo-3.png' />
+          	<img height="70"  className="logo" alt="logo" src={logo} />
           </Col>
           <Col xs={12} md={9}>
           	<h2>

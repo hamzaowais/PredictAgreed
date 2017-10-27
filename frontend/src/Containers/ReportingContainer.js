@@ -200,7 +200,7 @@ class ReportingContainer extends Component {
 		}
 		else{
 			return (
-			<Grid>
+			<div>
 				<Row>
 					<h3>{this.state.report_name}</h3>
 					<p>Description:{this.state.report_description}</p>
@@ -233,7 +233,7 @@ class ReportingContainer extends Component {
 						/>
 					</Col>
 				</Row>
-			</Grid>
+			</div>
 		)
 		}
 		}else{
