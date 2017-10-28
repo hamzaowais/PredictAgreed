@@ -1,6 +1,7 @@
 # iEXPLORECC
 ![alt text](https://github.com/hamzaowais11/iEXPLORECC/raw/master/flashing2.gif "web app progress")
 
+"Intelligent Exploration of Organ System Response in Critical Care (IEXPLORECC)". Currently, it can do data analytics on the MIMIC Database (deidentified health data of approx. 40,000 critical care patients). The beta version of this tool is being used by medical students to understand and interpret 60 GB of medical data better. It is also been used to generate training and validation dataset to train organ failure assessment modules. The technology stack being used here is Node.js for the back-end and React.js for the front-end.  
 
 
 #### Overview Container
