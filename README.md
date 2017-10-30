@@ -1,61 +1,17 @@
-# agreedpredict
-Analytics, Simulation, visualization,Prediction and Reports of your Business
+# iEXPLORECC
+![alt text](https://github.com/hamzaowais11/iEXPLORECC/raw/master/flashing2.gif "web app progress")
 
-# AgreedPredict
-### V0
-AgreedPredict is custom reporting tool for businesses that want very tailored analytics. This is demo of AgreedPredict. We have created a reporting tool on MIMIC-III, a freely accessible critical care database. 
-  
-For more information please see:
-  
-https://mimic.physionet.org/
-  
-This is just the demo data of the MIMIC DATABASE.
-  
-![](https://github.com/hamzaowais/agreedpredict/blob/master/demo.gif)
+"Intelligent Exploration of Organ System Response in Critical Care (IEXPLORECC)". Currently, it can do data analytics on the MIMIC Database (deidentified health data of approx. 40,000 critical care patients). The beta version of this tool is being used by medical students to understand and interpret 60 GB of medical data better. It is also been used to generate training and validation dataset to train organ failure assessment modules. The technology stack being used here is Node.js for the back-end and React.js for the front-end.  
 
-### Environment Set up
 
-1. Install MySQL Data base
-  
-2, Create two databases with the following configuration 
-`"demo_mimic":{
-		"host"     : 'localhost',
-  		"user"     : 'root',
-  		"password" : 'paytm@123',
-  		"database" : 'demo_mimic'
-	}
-`
-  
-`"iEXPLORECC":{
-		"host"     : 'localhost',
-  		"user"     : 'root',
-  		"password" : 'paytm@123',
-  		"database" : 'iEXPLORECC'
-	}`
-  
-2. Import the mysql dump of the 2 database from the folder   : backend/mysql_query
-  
-3. Install npm and node.js
-  
-4. goto the folder /backend
-  
-5. run the following command in the terminal:
-  
-`
-npm install
-  
-node app.js
-`
-  
-6. goto the /frontend folder
-  
-7. run the following command:
-  
-`
-npm install
-  
-npm start
-`
-  
-8.The app will start on ip : http://localhost:3000/
-  
+#### Overview Container
+The overview container displays an adjustable grid of patient overviews, each with a body map and organ status. Each overview will by default display the overall system status, and will display any organ systems that have a danger or warning status. If no organ systems are in danger, it will display 'All systems ok' in green. Using the dropdown menu in the navbar will let the user view different organ systems in detail for each patient.
+![alt text](https://github.com/hamzaowais11/iEXPLORECC/raw/master/icuoverview.png "web app progress")
+
+#### Patient View Container
+The patient view container holds the view of the individual patient, and displays a body map as there was in the overview container. However, this view has buttons for each organ system, that auto sort themselves based on which system is the most severe. Clicking on one of these buttons in the future will bring up data related to that organ system on the right side, and allow for the updating of information and viewing of previous information.
+![alt text](https://github.com/hamzaowais11/iEXPLORECC/raw/master/flashing2.gif "web app progress")
+
+#### Reporting Tool
+The reporting tool displays a table with provided information. The plan is to make this view filterable, and allow for the downloading of data from this table into a csv.
+![alt text](https://github.com/hamzaowais11/iEXPLORECC/raw/master/reportingtool.png "web app progress")
